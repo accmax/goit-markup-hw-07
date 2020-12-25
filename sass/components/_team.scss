@@ -1,0 +1,83 @@
+.section-team {
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list > li {
+  margin-right: 30px;
+
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list > li:nth-child(4) {
+  margin-right: 0px;
+}
+
+.team-list img {
+  margin-bottom: 30px;
+}
+
+.team-list h3 {
+  margin-bottom: 10px;
+}
+
+.section-team {
+  background-color: $primary-background-color;
+}
+
+.employee-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-list p {
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.social-list {
+  display: flex;
+  padding: 0px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.socials {
+  display: inline-flex;
+}
+
+.socials:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: $icon-primary-color;
+  transition: all $timing-function;
+}
+
+.social-link:hover,
+.social-link:focus {
+  cursor: pointer;
+  background-color: $accent-color;
+  border-radius: 50%;
+  fill: $white-color;
+}

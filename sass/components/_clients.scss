@@ -1,0 +1,47 @@
+.section.clients {
+  padding-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $icon-primary-color;
+  border-radius: 4px;
+  fill: $icon-primary-color;
+  transition: all $timing-function;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  cursor: pointer;
+  border: 1px solid $accent-color;
+  fill: $accent-color;
+}
+
+/* Footer */
+
+.container.footer {
+  display: flex;
+}
+
+.container-footer {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.container-footer.subscribe {
+  margin-left: auto;
+  margin-right: 0px;
+}

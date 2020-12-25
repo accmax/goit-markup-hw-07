@@ -1,0 +1,86 @@
+.container.footer {
+  display: flex;
+}
+
+.container-footer {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.container-footer.subscribe {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-background-color;
+}
+
+.logo.footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+li .address {
+  color: $bottom-contacts-text-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-item {
+  padding-bottom: 9px;
+}
+
+.social-list.footer {
+  margin: 0;
+}
+
+li .primary {
+  color: $white-color;
+}
+
+.social-link.footer {
+  fill: $white-color;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-link.footer:hover,
+.social-link.footer:focus {
+  background: $accent-color;
+}
+
+.container-footer > p {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+}
+
+.form-field.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.button.subscribe {
+  display: inline-flex;
+  align-items: center;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+  fill: $white-color;
+}
+
+.form-field .footer-input {
+  padding-left: 16px;
+}
