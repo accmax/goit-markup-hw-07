@@ -16,6 +16,18 @@
 
   font-size: 14px;
   line-height: 1.71;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  p {
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
 }
 
 .features-icon {
@@ -31,19 +43,7 @@
   border-radius: 4px;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.features-item p {
-  margin-top: 0px;
-}
-
-.features-item h3 {
-  margin-bottom: 10px;
 }

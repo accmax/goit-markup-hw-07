@@ -6,10 +6,10 @@
 .item.doing {
   margin-right: 30px;
   position: relative;
-}
 
-.item.doing:nth-child(3) {
-  margin-right: 0px;
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
 }
 
 .doing-description {

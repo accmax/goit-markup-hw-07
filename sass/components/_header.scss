@@ -19,29 +19,11 @@ nav {
   padding: 32px 0px;
   fill: $primary-text-color;
   transition: all $timing-function;
-}
 
-.contacts-top:hover,
-.contacts-top:focus {
-  fill: $accent-color;
-}
-
-/* Logo */
-
-.logo {
-  color: $accent-color;
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.primary-logo {
-  color: #000000;
-}
-
-.secondary-logo {
-  color: $white-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 /* Site navigation */
@@ -49,18 +31,18 @@ nav {
 .site-nav {
   display: flex;
   margin-left: 93px;
-}
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
+  a {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 
-.site-nav a {
-  color: $title-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .link {
@@ -114,14 +96,4 @@ nav {
 
 .container > address {
   margin-left: auto;
-}
-
-/* Main */
-
-.section-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
 }

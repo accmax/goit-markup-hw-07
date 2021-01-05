@@ -24,23 +24,14 @@
   border-style: none;
   cursor: pointer;
   transition: all $timing-function;
-}
 
-.filter-button:hover,
-.filter-button:focus {
-  padding: 6px 22px;
-  text-align: center;
+  &:hover,
+  &:focus {
+    color: $white-color;
 
-  font-family: inherit;
-  color: $white-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+    background-color: $accent-color;
 
-  background-color: $accent-color;
-  border-radius: 4px;
-  border-style: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
