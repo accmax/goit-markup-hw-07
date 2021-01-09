@@ -5,6 +5,7 @@
 }
 
 .team-list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
 
@@ -40,10 +41,12 @@
 }
 
 .employee-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @extend %title;
+  @include font(500, 16px, 1.19);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
 }
 
 .social-list {
@@ -62,11 +65,11 @@
 }
 
 .social-link {
-  display: flex;
+  @include centeredflex(); // display: flex;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   border-radius: 50%;
   fill: $icon-primary-color;
   transition: all $timing-function;

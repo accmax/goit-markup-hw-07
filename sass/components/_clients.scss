@@ -3,6 +3,7 @@
 }
 
 .clients-list {
+  @extend %list;
   display: flex;
 }
 
@@ -11,12 +12,10 @@
 }
 
 .clients-link {
-  display: inline-flex;
+  @include centeredflex(inline-flex);
   flex-wrap: wrap;
   width: 170px;
   height: 90px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid $icon-primary-color;
   border-radius: 4px;
   fill: $icon-primary-color;

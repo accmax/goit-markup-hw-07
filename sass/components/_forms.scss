@@ -3,10 +3,11 @@
   margin-bottom: 12px;
   text-align: center;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
+  @include font(700, 20px, 1.15);
+  // font-weight: 700;
+  // font-size: 20px;
+  // line-height: 1.15;
+  // letter-spacing: 0.03em;
 
   color: $title-text-color;
 }
@@ -77,10 +78,11 @@ textarea {
 }
 
 .form-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
 
   color: $primary-text-color;
   cursor: pointer;
@@ -91,10 +93,11 @@ textarea {
 }
 
 .form-field textarea::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include font($letter-spacing: 0.03em);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
 }

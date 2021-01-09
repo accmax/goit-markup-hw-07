@@ -4,8 +4,7 @@ header {
 
 header > .container,
 nav {
-  display: flex;
-  align-items: center;
+  @include centeredflex();
 }
 
 .contacts-icon {
@@ -14,8 +13,7 @@ nav {
 }
 
 .contacts-top {
-  display: flex;
-  align-items: center;
+  @include centeredflex();
   padding: 32px 0px;
   fill: $primary-text-color;
   transition: all $timing-function;
@@ -29,15 +27,17 @@ nav {
 /* Site navigation */
 
 .site-nav {
+  @extend %list;
   display: flex;
   margin-left: 93px;
 
+  .item {
+    @extend %list;
+  }
+
   a {
     color: $title-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, $letter-spacing: 0.02em);
   }
 
   .item:not(:last-child) {
@@ -83,15 +83,12 @@ nav {
 .contacts a {
   color: $primary-text-color;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, $letter-spacing: 0.02em);
 }
 
 .contacts.list {
-  display: flex;
-  align-items: center;
+  @extend %list;
+  @include centeredflex();
 }
 
 .container > address {

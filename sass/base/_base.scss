@@ -32,12 +32,12 @@ img {
   height: auto;
 }
 
-h2,
-h3 {
-  margin-top: 0px;
-  color: $title-text-color;
-  text-align: center;
-}
+// h2,
+// h3 {
+//   margin-top: 0px;
+//   color: $title-text-color;
+//   text-align: center;
+// }
 
 a {
   display: block;
@@ -48,25 +48,15 @@ section {
   padding-bottom: 94px;
 }
 
-.list,
-.team-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+// .list,
+// .team-list {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
 
 .section-title {
+  @extend %title;
   margin-bottom: 50px;
 
   font-weight: 700;

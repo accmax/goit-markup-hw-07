@@ -41,7 +41,7 @@
 
 .modal-button {
   position: absolute;
-  display: flex;
+  @include centeredflex();
   top: 8px;
   right: 8px;
   padding: 0px;
@@ -49,8 +49,6 @@
 
   width: 30px;
   height: 30px;
-  align-items: center;
-  justify-content: center;
 
   background: $white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);

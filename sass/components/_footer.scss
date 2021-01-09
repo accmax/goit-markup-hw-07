@@ -27,7 +27,12 @@ li .address {
 }
 
 .address-item {
-  padding-bottom: 9px;
+  @extend %list;
+  padding-bottom: 0px;
+
+  &:not(:last-child) {
+    padding-bottom: 9px;
+  }
 }
 
 .social-list.footer {
@@ -53,10 +58,11 @@ li .primary {
   margin-bottom: 20px;
 
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  @include font(700);
+  // font-size: 14px;
+  // line-height: 1.14;
+  // font-weight: 700;
+  // letter-spacing: 0.03em;
 
   color: $white-color;
 }
@@ -64,4 +70,8 @@ li .primary {
 .subscribe-icon {
   margin-left: 10px;
   fill: $white-color;
+}
+
+.footer-list {
+  @extend %list;
 }
